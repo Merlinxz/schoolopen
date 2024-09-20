@@ -1,0 +1,32 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    /* ลบ margin ของ body */
+    padding: 20px;
+    /* เพิ่ม padding รอบๆ */
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px);
+    /* ปรับให้พอดีกับ padding */
+    text-align: center;
+}
+
+.countdown {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+/* เพิ่มการตอบสนองสำหรับอุปกรณ์มือถือ */
+
+@media (max-width: 576px) {
+    .countdown {
+        font-size: 2.5rem;
+        /* ลดขนาดฟอนต์สำหรับมือถือ */
+    }
+}
